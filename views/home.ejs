@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo chat</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="loginform">
+			<form action="" method="POST" role="form">
+				<div class="form-group">
+					<label for="">Tên của bạn</label>
+					<input type="text" class="form-control" id="txtName" placeholder="Nhập...">
+				</div>
+			
+				<button type="button" class="btn btn-primary" id="btnReg">Đăng ký</button>
+			</form>
+		</div>
+		<div class="chatform">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="useronline">
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<h3 class="panel-title">User Online</h3>
+							</div>
+							<div class="panel-body h300">
+								<ul class="list-group" id="user-online">
+									<!-- <li class="list-group-item">Item 1</li>
+									<li class="list-group-item">Item 2</li>
+									<li class="list-group-item">Item 3</li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<div class="formchat">
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h3 class="panel-title">Phòng chat</h3>
+							</div>
+							<div class="panel-body">
+								<div class="text-right">
+									<div class="hello">Xin chào <span id="current-user">Vụ</span>
+										<button type="button" class="btn btn-default" id="btnlogout">Thoát</button>
+									</div>
+
+								</div>
+								<div class="message-content">
+									<ul>
+										
+									</ul>
+									<div id="userfocus"></div>
+								</div>
+								<div class="inputchat">
+									<div class="form form-inline">
+										<div class="form-group">
+											<label class="sr-only" for="">label</label>
+											<input type="text" class="form-control" id="txtmessage" placeholder="Nhập...">
+										</div>
+										<button type="button" class="btn btn-info" id="btnsendmessage">Gửi</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
